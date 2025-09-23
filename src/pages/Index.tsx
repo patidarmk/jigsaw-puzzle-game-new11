@@ -4,7 +4,7 @@ import { PuzzleBoard } from '@/components/PuzzleBoard';
 import { puzzleImages, PuzzleImage } from '@/data/puzzle-images';
 
 const Index = () => {
-  const [pieceCount, setPieceCount] = useState(25);
+  const [pieceCount, setPieceCount] = useState(9);
   const [selectedImage, setSelectedImage] = useState<PuzzleImage>(puzzleImages[0]);
   const [gameId, setGameId] = useState(1); // Used to force re-mount of PuzzleBoard
 
@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <div className="container mx-auto p-4 sm:p-6 lg:p-8">
       <div className="flex flex-col lg:flex-row gap-8">
-        <div className="lg/w-1/3 xl:w-1/4">
+        <div className="lg:w-1/3 xl:w-1/4">
           <GameControls
             pieceCount={pieceCount}
             setPieceCount={setPieceCount}

@@ -77,9 +77,10 @@ export const GameControls: React.FC<GameControlsProps> = ({
               <SelectValue placeholder="Select difficulty" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="25">25 Pieces (Easy)</SelectItem>
-              <SelectItem value="100">100 Pieces (Medium)</SelectItem>
-              <SelectItem value="225">225 Pieces (Hard)</SelectItem>
+              <SelectItem value="9">9 Pieces (Very Easy)</SelectItem>
+              <SelectItem value="16">16 Pieces (Easy)</SelectItem>
+              <SelectItem value="25">25 Pieces (Medium)</SelectItem>
+              <SelectItem value="100">100 Pieces (Hard)</SelectItem>
             </SelectContent>
           </Select>
         </div>
